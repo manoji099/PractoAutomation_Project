@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="TestCases.SearchHospitalTest">
+      <class name="TestCases.LogInTest">
         <methods>
-          <include name="getHospitalsNmaes"/>
+          <include name="verifyLogInWithvalidCredentials"/>
+          <include name="verifyLogInWithInvalidCredentials"/>
           <include name="flushReports"/>
         </methods>
-      </class> <!-- TestCases.SearchHospitalTest -->
+      </class> <!-- TestCases.LogInTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

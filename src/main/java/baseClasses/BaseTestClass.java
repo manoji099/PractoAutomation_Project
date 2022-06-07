@@ -37,7 +37,7 @@ public class BaseTestClass {
 
 		try {
 
-			if (browserName.equalsIgnoreCase("IE")) {
+			if (browserName.equalsIgnoreCase("chrome")) {
 
 				System.setProperty("webdriver.ie.driver",
 						System.getProperty("user.dir") + "/drivers/IEDriverServer");

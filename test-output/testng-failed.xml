@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]" parallel="none">
+  <test name="Regression Test Suite(failed)" parallel="none">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
     <classes>
-      <class name="TestCases.SearchHospitalTest">
+      <class name="TestCases.TopMenuTest">
         <methods>
-          <include name="getHospitalsNmaes"/>
-          <include name="flushReports"/>
+          <include name="diagnosticsButtontest"/>
+          <include name="pharmacyButtontest"/>
+          <include name="consultButtontest"/>
+          <include name="doctorsButtontest"/>
         </methods>
-      </class> <!-- TestCases.SearchHospitalTest -->
+      </class> <!-- TestCases.TopMenuTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Regression Test Suite(failed) -->
+</suite> <!-- Failed suite [Regression] -->
